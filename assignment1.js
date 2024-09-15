@@ -1,3 +1,12 @@
+/***************************
+*  WEB700 – Assignment 1
+*  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  
+*  No part of this assignment has been copied manually or electronically from any other source
+*  (including web sites) or distributed to other students.
+* 
+*  Name: Prashanth Sultan Harinath Student ID: 165963232 Date: 13-09-2024
+*
+****************************/
 const serverVerbs = ["GET", "GET", "GET", "POST", "GET", "POST"];
 const serverPaths = ["/", "/about", "/contact", "/login", "/panel", "/logout"];
 const serverResponses = [
@@ -18,13 +27,13 @@ function httpRequest(httpVerb, path) {
     return `404: Unable to process ${httpVerb} request for ${path}`;
 }
 
-console.log(httpRequest("GET", "/")); // Expected: "200: Welcome to WEB700 Assignment 1"
-console.log(httpRequest("GET", "/about")); // Expected: "200: This assignment was prepared by Student Name"
-console.log(httpRequest("GET", "/contact")); // Expected: "200: Student Name: Student Email"
-console.log(httpRequest("POST", "/login")); // Expected: "200: User Logged In"
-console.log(httpRequest("POST", "/logout")); // Expected: "200: Logout Complete"
-console.log(httpRequest("PUT", "/")); // Expected: "404: Unable to process PUT request for /"
-console.log(httpRequest("GET", "/randomPath")); // Expected: "404: Unable to process GET request for /randomPath"
+console.log(httpRequest("GET", "/")); 
+console.log(httpRequest("GET", "/about")); 
+console.log(httpRequest("GET", "/contact")); 
+console.log(httpRequest("POST", "/login")); 
+console.log(httpRequest("POST", "/logout")); 
+console.log(httpRequest("PUT", "/")); 
+console.log(httpRequest("GET", "/randomPath")); 
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
