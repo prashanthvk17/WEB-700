@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WEB700 - HTML Demo</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Prashanth Sultan Harinath</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+					<li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+					<li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container mt-4">
+			<div class="row">
+				<main class="col-md-12">
+
+					<!-- Tables Section -->
+					<h2>Tables</h2>
+					<table class="table table-bordered">
+						<caption>Sample Table 1</caption>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Program</th>
+								<th>Semester</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="2">Rowspan Cell</td>
+								<td>Cell 2</td>
+								<td>Cell 3</td>
+							</tr>
+							<tr>
+								<td>Cell 4</td>
+								<td>Cell 5</td>
+							</tr>
+							<tr>
+								<td>Cell 6</td>
+								<td colspan="2">Colspan Cell</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="3">Footer</td>
+							</tr>
+						</tfoot>
+					</table>
+
+					<table class="table table-striped">
+						<caption>Sample Table 2</caption>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Student ID</th>
+								<th>Program</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Prashanth</td>
+								<td>165963232</td>
+								<td>BTT</td>
+							</tr>
+							<tr>
+								<td>Ravi</td>
+								<td>123456789</td>
+								<td>CSN</td>
+							</tr>
+							<tr>
+								<td>Pritesh</td>
+								<td>9875654321</td>
+								<td>MST</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="3">Table Footer</td>
+							</tr>
+						</tfoot>
+					</table>
+
+					<p>This section demonstrates two HTML tables using thread, tbody, tfoot, th, td, tr, and includes rowspan and colspan properties.</p>
+
+					<!-- Lists Section -->
+					<h2>Lists</h2>
+					<ul>
+						<li>Apple</li>
+						<li>Banana</li>
+						<li>Berries
+							<ul>
+								<li>Blueberries</li>
+								<li>Cranberries</li>
+							</ul>
+						</li>
+						<li>Grapes</li>
+						<li>Mango</li>
+					</ul>
+					<p>This section demonstrates a list with a nested list inside one of the items.</p>
+
+                    <h2>Images</h2>
+
+                    <!-- First Image: Snowboarder -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder performing a trick" style="width: 300px;">
+                    <p>Description: A snowboarder performing a trick in a halfpipe during a competition.</p>
+                    
+                    <!-- Second Image: Waterfall -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Hopetoun_falls.jpg" alt="Waterfall Scenery" style="width: 300px;">
+                    <p>Description: A beautiful waterfall scenery.</p>
+                    
+                    <!-- Third Image: Dice -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png" alt="Transparency Demo" width="300" />
+                    <p>Description: Four different colourful dice on display.</p>
+
+                    
+                    <p>This section displays three images with relevant alt text and descriptions.</p>
+                    
+
+					<!-- Audio Section -->
+					<h2>Audio</h2>
+					<audio controls>
+						<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+					<p>This section demonstrates an HTML5 audio player with a sample audio file.</p>
+
+					<!-- Video Section -->
+					<h2>Video</h2>
+					<video controls width="400">
+						<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.mp4" type="video/mp4">
+						Your browser does not support the video element.
+					</video>
+					<p>This section demonstrates an HTML5 video player with a sample video file.</p>
+
+				</main>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
