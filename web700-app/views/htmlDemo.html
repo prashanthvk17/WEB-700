@@ -4,6 +4,7 @@
 		<title>WEB700 - HTML Demo</title>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="/css/theme.css">
 	</head>
 
 	<body>
@@ -18,6 +19,7 @@
 					<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
 					<li class="nav-item active"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
+					<li class="nav-item"><a class="nav-link" href="/students/add">Add Student</a></li>
 				</ul>
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
@@ -32,39 +34,40 @@
 				<main class="col-md-12">
 
 					<!-- Tables Section -->
-					<h2>Tables</h2>
-					<table class="table table-bordered">
-						<caption>Sample Table 1</caption>
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Program</th>
-								<th>Semester</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td rowspan="2">Rowspan Cell</td>
-								<td>Cell 2</td>
-								<td>Cell 3</td>
-							</tr>
-							<tr>
-								<td>Cell 4</td>
-								<td>Cell 5</td>
-							</tr>
-							<tr>
-								<td>Cell 6</td>
-								<td colspan="2">Colspan Cell</td>
-							</tr>
-						</tbody>
-						<tfoot>
-							<tr>
-								<td colspan="3">Footer</td>
-							</tr>
-						</tfoot>
-					</table>
+					<h2>Vehicles Lists</h2>
+                    <table class="table">
+                        <caption>Sample Table 1 </caption>
+                        <thead>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Name</th>
+                                <th>Model</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">1</td>
+                                <td rowspan="2">Cars</td>
+                                <td>Lamborghini Urus</td>
+                                <td>$100,295.00</td>
+                            </tr>
+                            <tr>
+                                
+                                <td>Range Rover</td>
+                                <td>$94,500.00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Total cost</td>
+                                <td>$194,795.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
 
 					<table class="table table-striped">
+						<h3>Students Lists</h3>
 						<caption>Sample Table 2</caption>
 						<thead>
 							<tr>
@@ -91,10 +94,6 @@
 							</tr>
 						</tbody>
 						<tfoot>
-							<tr>
-								<td colspan="3">Table Footer</td>
-							</tr>
-						</tfoot>
 					</table>
 
 					<p>This section demonstrates two HTML tables using thread, tbody, tfoot, th, td, tr, and includes rowspan and colspan properties.</p>

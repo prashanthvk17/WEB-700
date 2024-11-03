@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+body, html {
+    font-family: 'Oswald', sans-serif;
+    height: 100%;
+    overflow: auto;
+    background: linear-gradient(to right, #07e9f9, #a9fe00);
+  }
+
+.navbar {
+    background-color: #96fc07;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar-light .navbar-brand:hover, 
+  .navbar-light .navbar-brand:focus {
+      color: #e8fc08 !important;
+      text-decoration: none; 
+  }
+
+  .nav-link:hover {
+    color: #f5da0a !important;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 123, 255, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 6px 8px rgba(148, 230, 7, 0.936);
+}
+
+.container {
+    background-color: #fbfafa;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+h1, h2 {
+    color: #555;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  p {
+    color: #555;
+  }
+  
+.btn {
+    background-color: #f153b7;
+    color: #100404;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0a0b0b;
+  }
+
+  table tr:nth-child(odd) td {
+    background-color: #caf66c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+  
+  
+  

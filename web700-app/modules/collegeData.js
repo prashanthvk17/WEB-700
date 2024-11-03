@@ -86,6 +86,15 @@ module.exports = {
                 reject("no results returned");
             }
         });
+    },
+
+    // Add the addStudent function here
+    addStudent: function(studentData) {
+        return new Promise((resolve, reject) => {
+            studentData.TA = studentData.TA ? true : false;
+            studentData.studentNum = dataCollection.students.length + 1;
+            dataCollection.students.push(studentData);
+            resolve();
+        });
     }
 };
-
