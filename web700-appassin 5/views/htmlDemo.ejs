@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB700 - HTML Demo</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWrnQq4xIM+B07jRM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/theme.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+
+    <div class="container mt-4">
+        <div class="row">
+            <main class="col-md-12">
+                <h2>Vehicles Lists</h2>
+                <table class="table">
+                    <caption>Sample Table 1 </caption>
+                    <thead>
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Name</th>
+                            <th>Model</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">1</td>
+                            <td rowspan="2">Cars</td>
+                            <td>Lamborghini Urus</td>
+                            <td>$100,295.00</td>
+                        </tr>
+                        <tr>
+                            <td>Range Rover</td>
+                            <td>$94,500.00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total cost</td>
+                            <td>$194,795.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <h3>Students Lists</h3>
+                <table class="table table-striped">
+                    <caption>Sample Table 2</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Student ID</th>
+                            <th>Program</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Prashanth</td>
+                            <td>165963232</td>
+                            <td>BTT</td>
+                        </tr>
+                        <tr>
+                            <td>Ravi</td>
+                            <td>123456789</td>
+                            <td>CSN</td>
+                        </tr>
+                        <tr>
+                            <td>Pritesh</td>
+                            <td>9875654321</td>
+                            <td>MST</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>This section demonstrates two HTML tables using thread, tbody, tfoot, th, td, tr, and includes rowspan and colspan properties.</p>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
